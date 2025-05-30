@@ -397,9 +397,13 @@ section h2 {
   font-size: 2.5rem;
   font-weight: bold;
   border: none;
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
   margin-bottom: 2.5rem;
   color: var(--text-main);
+  border-bottom: 3px solid var(--border);
+  padding-bottom: 0.3em;
 }
 
 .leadership .achievements {
@@ -557,4 +561,8 @@ footer {
   .projects-grid {
     grid-template-columns: 1fr;
   }
+}
+
+main > section {
+  margin-bottom: 3.5rem !important;
 } 
