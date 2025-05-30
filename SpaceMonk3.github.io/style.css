@@ -480,6 +480,22 @@ footer {
   position: static;
 }
 
+.project-link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.project-link .project-card {
+  transition: border-color 0.2s, box-shadow 0.2s, background 0.2s;
+}
+
+.project-link:hover .project-card {
+  border-color: #fff;
+  box-shadow: 0 2px 16px 0 rgba(255,255,255,0.08);
+  background: rgba(255,255,255,0.02);
+}
+
 @media (max-width: 900px) {
   .hero {
     flex-direction: column;
