@@ -677,4 +677,29 @@ main > section {
     width: 100%;
     max-width: 100%;
   }
+}
+
+/* Add this to standardize icon alignment in contact section */
+.contact-info .contact-icon {
+  width: 2.2rem;
+  min-width: 2.2rem;
+  height: 2.2rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.2rem;
+  margin-right: 0.7em;
+  vertical-align: middle;
+}
+
+.contact-info p {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.7em;
+}
+
+.contact-info span.contact-icon svg {
+  width: 1.7rem;
+  height: 1.7rem;
+  display: block;
 } 
