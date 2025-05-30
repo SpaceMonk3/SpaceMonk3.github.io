@@ -1,4 +1,6 @@
 // Smooth scroll for nav links
+// Handles all nav links, including new sections like Leadership
+
 document.querySelectorAll('.nav-links a').forEach(link => {
   link.addEventListener('click', function(e) {
     const target = document.querySelector(this.getAttribute('href'));
@@ -9,14 +11,15 @@ document.querySelectorAll('.nav-links a').forEach(link => {
   });
 });
 
-// Highlight nav link on scroll
+// Highlight nav link on scroll for all sections
 window.addEventListener('scroll', () => {
   const sections = document.querySelectorAll('main section');
   const navLinks = document.querySelectorAll('.nav-links a');
   let current = '';
+  const scrollY = window.pageYOffset;
   sections.forEach(section => {
-    const sectionTop = section.offsetTop - 80;
-    if (pageYOffset >= sectionTop) {
+    const sectionTop = section.offsetTop - 100; // Adjust for sticky header
+    if (scrollY >= sectionTop) {
       current = section.getAttribute('id');
     }
   });
