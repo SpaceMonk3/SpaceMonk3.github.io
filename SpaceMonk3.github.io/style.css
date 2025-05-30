@@ -211,12 +211,44 @@ section h2 {
 }
 
 .experience .exp-list {
-  border-left: 3px solid var(--border);
-  padding-left: 2rem;
+  position: relative;
+  border-left: none;
+  margin-left: 0;
+  padding-left: 32px;
 }
 
-.exp-item {
+.experience .exp-list::before {
+  content: '';
+  position: absolute;
+  left: 8px;
+  top: 0;
+  width: 3px;
+  height: 100%;
+  background: #fff;
+  z-index: 0;
+}
+
+.experience .exp-item {
+  position: relative;
   margin-bottom: 3rem;
+  padding-bottom: 0;
+}
+
+.experience .exp-item::before {
+  content: '';
+  position: absolute;
+  left: -30px;
+  top: 0.7em;
+  width: 12px;
+  height: 12px;
+  background: #fff;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.experience .exp-item:last-child {
+  margin-bottom: 0;
 }
 
 .exp-item h3 {
@@ -244,28 +276,35 @@ section h2 {
 }
 
 .skills-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2.5rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+  align-items: stretch;
+  justify-items: center;
 }
 
 .skill-card {
-  flex: 1 1 320px;
+  width: 370px;
+  height: 270px;
   background: transparent;
   border: 2px solid var(--border);
   border-radius: 0;
   padding: 1.5rem 1rem 1rem 1rem;
   color: var(--text-main);
-  margin-bottom: 2rem;
-  min-width: 300px;
-  min-height: 180px;
-  position: relative;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 0;
+  box-sizing: border-box;
+  overflow: hidden;
 }
 
 .skill-card h3 {
   font-size: 1.3rem;
   margin-bottom: 0.5rem;
   color: var(--highlight);
+  font-weight: bold;
   display: flex;
   align-items: center;
   gap: 0.5rem;
@@ -276,6 +315,8 @@ section h2 {
   flex-wrap: wrap;
   gap: 0.7rem;
   margin-top: 1rem;
+  overflow-wrap: anywhere;
+  word-break: break-word;
 }
 
 .skill-tags span {
@@ -285,6 +326,8 @@ section h2 {
   font-size: 1.1rem;
   background: transparent;
   color: var(--text-main);
+  overflow-wrap: anywhere;
+  word-break: break-word;
 }
 
 .projects-grid {
@@ -417,13 +460,13 @@ footer {
 
 /* Minimalistic icon style */
 .icon {
-  display: inline-block;
-  width: 1.3em;
-  height: 1.3em;
+  font-size: 2.2rem;
   vertical-align: middle;
-  fill: var(--text-main);
-  stroke: var(--text-main);
-  stroke-width: 2;
+  margin-right: 0.5rem;
+  line-height: 1;
+  display: inline-block;
+  position: relative;
+  top: 0.1em;
 }
 
 @media (max-width: 900px) {
@@ -462,5 +505,15 @@ footer {
     width: 100%;
     max-width: 100vw;
     margin: 0 auto;
+  }
+  .skills-grid {
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+  }
+  .skill-card {
+    width: 100%;
+    min-width: 0;
+    height: auto;
+    min-height: 220px;
   }
 } 
