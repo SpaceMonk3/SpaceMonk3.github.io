@@ -3,41 +3,97 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dheer Tammina | Portfolio</title>
+  <title>Dheer Tammina | Software Engineer & Founder | Portfolio</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Dheer Tammina - Software Engineer, Founder at Cordi, and Ex-CS TA at GMU. Specializing in full-stack development, AI/ML, and entrepreneurship.">
+  <meta name="keywords" content="Dheer Tammina, Software Engineer, Full Stack Developer, AI/ML Engineer, GMU, Computer Science, React, Next.js, Python, Java, JavaScript, Portfolio">
+  <meta name="author" content="Dheer Tammina">
+  <meta name="robots" content="index, follow">
+  
+  <!-- Open Graph / Social Media Meta Tags -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://spacemonk3.github.io/">
+  <meta property="og:title" content="Dheer Tammina | Software Engineer & Founder">
+  <meta property="og:description" content="Portfolio of Dheer Tammina - Software Engineer and Founder specializing in full-stack development, AI/ML, and entrepreneurship.">
+  <meta property="og:image" content="https://spacemonk3.github.io/avatar.png">
+  
+  <!-- Twitter Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Dheer Tammina | Software Engineer & Founder">
+  <meta name="twitter:description" content="Portfolio of Dheer Tammina - Software Engineer and Founder specializing in full-stack development, AI/ML, and entrepreneurship.">
+  <meta name="twitter:image" content="https://spacemonk3.github.io/avatar.png">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="avatar.png">
+  <link rel="apple-touch-icon" href="avatar.png">
+  
+  <!-- Stylesheets and Fonts -->
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link rel="icon" type="image/png" href="avatar.png">
+  
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://spacemonk3.github.io/">
+  
+  <!-- Sitemap Reference -->
+  <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml">
 </head>
 <body>
   <header>
-    <nav class="navbar">
+    <nav class="navbar" aria-label="Main Navigation">
       <div class="logo">DT</div>
       <ul class="nav-links" id="navLinks">
-        <li><a href="#about">About</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#startups">Startups</a></li>
-        <li><a href="#leadership">Leadership</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about" title="About Dheer Tammina">About</a></li>
+        <li><a href="#experience" title="Professional Experience">Experience</a></li>
+        <li><a href="#skills" title="Technical Skills">Skills</a></li>
+        <li><a href="#projects" title="Projects Portfolio">Projects</a></li>
+        <li><a href="#startups" title="Startup Ventures">Startups</a></li>
+        <li><a href="#leadership" title="Leadership Experience">Leadership</a></li>
+        <li><a href="#contact" title="Contact Information">Contact</a></li>
       </ul>
-      <span class="material-icons menu-icon" id="menuToggle">menu</span>
+      <span class="material-icons menu-icon" id="menuToggle" aria-label="Toggle navigation menu" role="button" tabindex="0">menu</span>
     </nav>
   </header>
   <main>
-    <section class="hero">
+    <section class="hero" aria-labelledby="hero-heading">
       <div class="hero-content">
-        <h1>Dheer Tammina</h1>
+        <h1 id="hero-heading">Dheer Tammina</h1>
         <h2>Software Engineer | Founder @ Cordi | Ex-CS TA @ GMU</h2>
         <p>i like building all things tech.</p>
-        <a href="#about" class="btn">Learn more ↓</a>
+        <a href="#about" class="btn" aria-label="Learn more about Dheer Tammina">Learn more ↓</a>
       </div>
       <div class="hero-img">
-        <img src="avatar.png" alt="Dheer Tammina" />
+        <img src="avatar.png" alt="Dheer Tammina - Software Engineer and Founder" />
       </div>
     </section>
-    <section id="about" class="about">
-      <h2><span class="material-icons icon">person</span> About Me</h2>
+    
+    <!-- Add schema.org structured data for Person -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Dheer Tammina",
+      "url": "https://spacemonk3.github.io/",
+      "image": "https://spacemonk3.github.io/avatar.png",
+      "jobTitle": "Software Engineer",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Cordi"
+      },
+      "alumniOf": {
+        "@type": "CollegeOrUniversity",
+        "name": "George Mason University"
+      },
+      "knowsAbout": ["Software Engineering", "AI/ML", "Full Stack Development", "Game Development", "Leadership"],
+      "sameAs": [
+        "https://linkedin.com/in/dheer-tammina",
+        "https://github.com/spacemonk3"
+      ]
+    }
+    </script>
+
+    <section id="about" class="about" aria-labelledby="about-heading">
+      <h2 id="about-heading"><span class="material-icons icon">person</span> About Me</h2>
       <div class="about-content">
         <div class="about-text">
           <p>As a recent Computer Science graduate from George Mason University, I bring a strong foundation in software engineering, AI, and cloud technologies. I've developed and deployed a broad range of full-stack projects using React, Next.js, Firebase, AWS, and TensorFlow, with core skills in Java, Python, JavaScript, and modern web frameworks.</p>
@@ -64,8 +120,8 @@
         </ul>
       </div>
     </section>
-    <section id="experience" class="experience">
-      <h2><span class="material-icons icon">work</span> Experience</h2>
+    <section id="experience" class="experience" aria-labelledby="experience-heading">
+      <h2 id="experience-heading"><span class="material-icons icon">work</span> Experience</h2>
       <div class="exp-list">
         <div class="exp-item">
           <h3>Founding Software Engineer</h3>
@@ -118,8 +174,8 @@
         </div>
       </div>
     </section>
-    <section id="skills" class="skills">
-      <h2><span class="material-icons icon">psychology</span> Skills</h2>
+    <section id="skills" class="skills" aria-labelledby="skills-heading">
+      <h2 id="skills-heading"><span class="material-icons icon">psychology</span> Skills</h2>
       <div class="skills-grid">
         <div class="skill-card">
           <h3><span class="material-icons icon">code</span> Programming Languages</h3>
@@ -171,8 +227,8 @@
         </div>
       </div>
     </section>
-    <section id="projects" class="projects">
-      <h2><span class="material-icons icon">emoji_events</span> Projects & Hackathons</h2>
+    <section id="projects" class="projects" aria-labelledby="projects-heading">
+      <h2 id="projects-heading"><span class="material-icons icon">emoji_events</span> Projects & Hackathons</h2>
       <div class="projects-grid">
         <a href="project-book-sharing.html" class="project-link">
           <div class="project-card">
@@ -266,8 +322,8 @@
         </a>
       </div>
     </section>
-    <section id="startups" class="startups">
-      <h2><span class="material-icons icon">business_center</span> Startups</h2>
+    <section id="startups" class="startups" aria-labelledby="startups-heading">
+      <h2 id="startups-heading"><span class="material-icons icon">business_center</span> Startups</h2>
       <div class="startups-grid">
         <a href="startup-shopar.html" class="startup-link">
           <div class="startup-card">
@@ -298,8 +354,8 @@
         </a>
       </div>
     </section>
-    <section id="leadership" class="leadership">
-      <h2><span class="material-icons icon">groups</span> Leadership</h2>
+    <section id="leadership" class="leadership" aria-labelledby="leadership-heading">
+      <h2 id="leadership-heading"><span class="material-icons icon">groups</span> Leadership</h2>
       <div class="achievements">
         <ul>
           <li>President, Indian Student Association - hosted & organized events with 600+ attendees & generated $10000+ revenue</li>
@@ -308,8 +364,8 @@
         </ul>
       </div>
     </section>
-    <section id="contact" class="contact">
-      <h2><span class="material-icons icon">mail</span> Contact</h2>
+    <section id="contact" class="contact" aria-labelledby="contact-heading">
+      <h2 id="contact-heading"><span class="material-icons icon">mail</span> Contact</h2>
       <div class="contact-content">
         <div class="contact-info">
           <p><span class="material-icons contact-icon">mail</span><span><a href="mailto:dtammana.work@gmail.com">dtammana.work@gmail.com</a></span></p>
@@ -335,6 +391,19 @@
     <div class="footer-content">
       <span>Dheer Tammina</span>
       <span>© 2025 Dheer Tammina</span>
+    </div>
+    <div class="footer-nav">
+      <nav aria-label="Footer Navigation">
+        <ul class="footer-links">
+          <li><a href="#about" title="About Dheer Tammina">About</a></li>
+          <li><a href="#experience" title="Professional Experience">Experience</a></li>
+          <li><a href="#skills" title="Technical Skills">Skills</a></li>
+          <li><a href="#projects" title="Projects Portfolio">Projects</a></li>
+          <li><a href="#startups" title="Startup Ventures">Startups</a></li>
+          <li><a href="#leadership" title="Leadership Experience">Leadership</a></li>
+          <li><a href="#contact" title="Contact Information">Contact</a></li>
+        </ul>
+      </nav>
     </div>
   </footer>
   <script src="script.js"></script>

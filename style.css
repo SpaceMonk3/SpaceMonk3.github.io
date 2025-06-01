@@ -497,6 +497,33 @@ footer {
   font-size: 1rem;
 }
 
+.footer-nav {
+  max-width: 1200px;
+  margin: 1.5rem auto 0;
+  padding: 1rem 2rem 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links a {
+  color: var(--text-secondary);
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.2s;
+}
+
+.footer-links a:hover {
+  color: var(--highlight);
+}
+
 /* Minimalistic icon style */
 .icon {
   font-size: 2.2rem;
@@ -554,6 +581,9 @@ footer {
     flex-direction: column;
     gap: 0.5rem;
     align-items: center;
+  }
+  .footer-links {
+    gap: 1rem;
   }
   .nav-links {
     display: none;
