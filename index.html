@@ -138,13 +138,14 @@
           <h4>Tech Tammina</h4>
           <span class="exp-date">August 2024 - August 2025 | Chantilly, VA</span>
           <ul>
-            <li>Built a document ingestion pipeline using Python and Tesseract OCR to extract structured fields (name, dates, policy
-              numbers) from scanned PDF contracts</li>
-            <li>Developed a simple logistic regression classifier using scikit-learn to validate document type (quote, claim, policy, etc.)
-              before processing</li>
-            <li>Logged extracted data to MongoDB, providing an API endpoint for internal tools to search, retrieve, and audit uploaded
-              documents</li>
-            <li>Created a test set of 100 sample documents, achieving 92% extraction accuracy in internal validation trials</li>
+            <li>Built an AI document ingestion pipeline using Python, pdfplumber, and pytesseract to extract structured fields from
+              scanned insurance policies (e.g., names, dates, coverage details)</li>
+            <li>Developed a unified classification API using FastAPI & Azure OpenAI to detect different policy types & extract key clauses</li>
+            <li>Implemented a RAG workflow with Azure Search to compare past policies with current versions and identify discrepancies at
+              the clause level</li>
+            <li>Integrated backend services with Express.js and exposed REST and GraphQL endpoints for downstream systems, which are
+              built with Appian</li>
+            <li>Deployed solutions on AWS EC2 with S3-based storage, achieving 92% extraction accuracy on 100+ sample documents</li>
           </ul>
         </div>
         <div class="exp-item">
